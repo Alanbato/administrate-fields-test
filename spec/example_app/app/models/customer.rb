@@ -4,6 +4,9 @@ class Customer < ActiveRecord::Base
   validates :name, presence: true
   validates :email, presence: true
 
+  enum categ: [:pro, :basic]
+  attachment :profile_pic
+
   KINDS = [
     :standard,
     :vip,

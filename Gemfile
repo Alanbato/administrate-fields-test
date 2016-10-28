@@ -13,6 +13,11 @@ gem "markdown-rails"
 gem "pg"
 gem "redcarpet"
 gem "unicorn"
+gem "administrate-field-password"
+gem "administrate-field-enum"
+gem "administrate-field-refile"
+gem "refile", require: "refile/rails"
+gem "refile-mini_magick"
 
 group :development do
   gem "web-console", ">= 2.1.3"
